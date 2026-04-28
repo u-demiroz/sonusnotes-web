@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mic, BrainCircuit, LineChart, Globe2, Shield, Sparkles, ChevronRight, Apple, Play } from 'lucide-react';
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 function App() {
