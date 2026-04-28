@@ -75,16 +75,6 @@ function App() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none -z-10" />
         <div className="absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-accent/20 rounded-full blur-[100px] pointer-events-none -z-10" />
 
-        <motion.div 
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 text-sm font-medium text-primary border border-primary/20"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Sparkles className="w-4 h-4" />
-          Powered by Gemini AI
-        </motion.div>
-
         <motion.h1 
           className="text-5xl md:text-7xl font-bold max-w-4xl tracking-tight leading-tight mb-8"
           {...fadeIn}
@@ -105,18 +95,16 @@ function App() {
         </motion.p>
 
         <motion.div 
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row gap-4 justify-center w-full"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <button className="flex items-center justify-center gap-3 bg-white text-background-dark px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform hover:shadow-[0_0_30px_-5px_rgba(255,255,255,0.4)]">
-            <Apple className="w-6 h-6" />
+            <svg viewBox="0 0 384 512" className="w-6 h-6 fill-current">
+              <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+            </svg>
             App Store
-          </button>
-          <button className="flex items-center justify-center gap-3 glass px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all border border-white/20">
-            <Play className="w-5 h-5" />
-            Google Play
           </button>
         </motion.div>
 
@@ -129,15 +117,33 @@ function App() {
         >
           <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-[32px] blur opacity-20" />
           <div className="glass rounded-3xl p-6 md:p-10 relative overflow-hidden border border-white/10">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="w-full md:w-1/2 flex flex-col gap-4">
-                <div className="h-4 bg-white/10 rounded-full w-1/3" />
-                <div className="h-8 bg-white/20 rounded-full w-3/4" />
-                <div className="h-4 bg-white/5 rounded-full w-full mt-4" />
-                <div className="h-4 bg-white/5 rounded-full w-5/6" />
-                <div className="h-4 bg-white/5 rounded-full w-4/6" />
+            <div className="flex flex-col md:flex-row gap-8 items-center text-left">
+              <div className="w-full md:w-1/2 flex flex-col gap-5">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                      <Mic className="w-5 h-5 text-white/80" />
+                    </div>
+                    <div>
+                      <div className="text-white font-medium">Morning Journal</div>
+                      <div className="text-muted-dark text-xs">Today, 08:30 AM</div>
+                    </div>
+                  </div>
+                  <div className="text-muted-dark text-xs">2:45</div>
+                </div>
                 
-                <div className="mt-6 flex gap-2">
+                {/* Audio Waveform Mockup */}
+                <div className="flex items-center gap-1 w-full h-8">
+                  {[...Array(24)].map((_, i) => (
+                    <div key={i} className={`w-2 rounded-full ${i < 10 ? 'bg-primary' : 'bg-white/10'}`} style={{ height: `${Math.max(20, Math.random() * 100)}%` }} />
+                  ))}
+                </div>
+
+                <p className="text-white/80 text-sm leading-relaxed mt-2">
+                  "I woke up feeling really refreshed today. Yesterday was stressful, but taking that evening walk completely cleared my mind. I feel ready to tackle the new project at work..."
+                </p>
+                
+                <div className="mt-2 flex gap-2">
                   <div className="px-3 py-1 rounded-full bg-success/20 text-success text-xs font-medium border border-success/30">Joy 85%</div>
                   <div className="px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium border border-primary/30">Calm</div>
                 </div>
