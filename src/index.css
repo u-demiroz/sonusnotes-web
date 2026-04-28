@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A5B4FC;
+  --color-secondary: #BAE6FD;
+  --color-accent: #F9A8D4;
+  --color-success: #86EFAC;
+  --color-background-light: #F8FAFC;
+  --color-surface-light: #FFFFFF;
+  --color-background-dark: #0F172A;
+  --color-surface-dark: #1E293B;
+  --color-text-light: #334155;
+  --color-text-dark: #F8FAFC;
+  --color-muted-light: #64748B;
+  --color-muted-dark: #94A3B8;
+}
+
+@layer base {
+  body {
+    @apply bg-background-dark text-text-dark;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Utilities for glassmorphism */
+@layer utilities {
+  .glass {
+    @apply bg-surface-dark/50 backdrop-blur-md border border-white/10;
+  }
+  .glow {
+    box-shadow: 0 0 40px -10px var(--color-primary);
+  }
+}
