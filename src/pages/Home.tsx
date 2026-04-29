@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mic, BrainCircuit, LineChart, Globe2, Shield, Sparkles, ChevronRight, Apple, Play } from 'lucide-react';
+import { Mic, BrainCircuit, LineChart, Globe2, Shield, Sparkles, ChevronRight } from 'lucide-react';
 
 import { Link } from 'react-router-dom';
 
