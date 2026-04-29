@@ -228,6 +228,42 @@ function App() {
         </button>
       </section>
 
+      {/* Contact Form */}
+      <section id="contact" className="py-24 px-6 relative bg-black/20 border-t border-white/5">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+            <p className="text-muted-dark text-lg">Have a question or need support? Send us a message.</p>
+          </div>
+          
+          <div className="glass p-8 rounded-3xl border border-white/5 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[80px] pointer-events-none -z-10" />
+            
+            <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" className="flex flex-col gap-6">
+              <div className="flex flex-col sm:flex-row gap-6">
+                <div className="flex-1">
+                  <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">Full Name</label>
+                  <input type="text" id="name" name="name" required className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all" placeholder="John Doe" />
+                </div>
+                <div className="flex-1">
+                  <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2">Email Address</label>
+                  <input type="email" id="email" name="email" required className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all" placeholder="john@example.com" />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-white/80 mb-2">Message</label>
+                <textarea id="message" name="message" required rows={5} className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all resize-none" placeholder="How can we help you today?"></textarea>
+              </div>
+              
+              <button type="submit" className="w-full py-4 bg-white text-background-dark rounded-xl font-bold text-lg hover:bg-white/90 transition-colors mt-2">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-white/10 text-center text-muted-dark text-sm">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
@@ -239,7 +275,7 @@ function App() {
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy</Link>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Contact</a>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </div>
         </div>
       </footer>
