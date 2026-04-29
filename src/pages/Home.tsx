@@ -239,7 +239,7 @@ function App() {
           <div className="glass p-8 rounded-3xl border border-white/5 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[80px] pointer-events-none -z-10" />
             
-            <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" className="flex flex-col gap-6">
+            <form action="https://formspree.io/f/mrernjgl" method="POST" className="flex flex-col gap-6">
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="flex-1">
                   <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">Full Name</label>
