@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mic, BrainCircuit, LineChart, Globe2, Shield, Sparkles, ChevronRight } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 import { Link } from 'react-router-dom';
 
@@ -50,7 +51,7 @@ function App() {
       <nav className="fixed top-0 w-full z-50 glass border-b-0 border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Sonus Notes Logo" className="w-8 h-8 rounded-lg object-contain glow" />
+            <img src={logo} alt="Sonus Notes Logo" className="w-8 h-8 rounded-lg object-contain glow" />
             <span className="text-xl font-bold tracking-tight">Sonus Notes</span>
           </div>
           <div className="flex gap-4">
