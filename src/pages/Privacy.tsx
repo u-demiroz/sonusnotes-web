@@ -45,14 +45,15 @@ function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">3. Artificial Intelligence and Voice Analysis</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">3. Third-Party AI Data Sharing (Google Gemini)</h2>
             <p>
-              Sonus Notes uses artificial intelligence (powered by Google Gemini) to transcribe your voice notes and analyze emotional content to provide personalized insights.
+              Sonus Notes uses artificial intelligence to transcribe your voice notes and analyze emotional content to provide personalized insights.
             </p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>Your audio data is processed temporarily for transcription and emotion analysis.</li>
-              <li>We do not use your personal audio recordings to train our own AI models.</li>
-              <li>All transcriptions and analyses are stored securely and are accessible only by you.</li>
+              <li><strong>What data is sent:</strong> We transmit your audio recordings and any photos you attach to your journal entries.</li>
+              <li><strong>Who the data is sent to:</strong> The data is securely transmitted to Google's Gemini AI service via an encrypted API connection.</li>
+              <li><strong>Data Protection:</strong> We confirm that Google (the third-party AI provider) provides the same or equal protection of your personal data as outlined in this Privacy Policy. Your personal audio and images are NOT used to train their foundational models.</li>
+              <li><strong>Explicit Consent:</strong> We will explicitly ask for your permission before transmitting any of your data to the AI service for the first time within the app.</li>
             </ul>
           </section>
 
