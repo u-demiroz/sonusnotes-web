@@ -10,9 +10,7 @@ function Privacy() {
       <nav className="w-full z-50 glass border-b border-white/5 mb-12">
         <div className="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center glow">
-              <Mic className="w-5 h-5 text-background-dark" />
-            </div>
+            <img src="/logo.png" alt="Sonus Notes Logo" className="w-8 h-8 rounded-lg object-contain glow" />
             <span className="text-xl font-bold tracking-tight">Sonus Notes</span>
           </Link>
           <Link to="/" className="flex items-center gap-2 text-muted-dark hover:text-white transition-colors text-sm font-medium">
