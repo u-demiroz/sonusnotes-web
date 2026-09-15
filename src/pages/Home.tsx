@@ -247,8 +247,8 @@ function App() {
                   <div className="text-muted-dark text-xs">2:45</div>
                 </div>
                 <div className="flex items-center gap-1 w-full h-8">
-                  {[...Array(24)].map((_, i) => (
-                    <div key={i} className={`w-2 rounded-full ${i < 10 ? 'bg-primary' : 'bg-white/10'}`} style={{ height: `${Math.max(20, (i * 17 + 30) % 100)}%` }} />
+                  {[...Array(24)].map((_, idx) => (
+                    <div key={idx} className={`w-2 rounded-full ${idx < 10 ? 'bg-primary' : 'bg-white/10'}`} style={{ height: `${Math.max(20, (idx * 17 + 30) % 100)}%` }} />
                   ))}
                 </div>
                 <p className="text-white/80 text-sm leading-relaxed mt-2">
@@ -286,7 +286,7 @@ function App() {
             <p className="text-muted-dark text-lg">{t.how_subtitle}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {(['1','2','3'] as const).map((num, i) => (
+            {(['1','2','3'] as const).map((num) => (
               <div key={num} className="glass p-8 rounded-3xl relative overflow-hidden group hover:bg-white/[0.05] transition-colors border border-white/5">
                 <div className="text-7xl font-bold text-white/5 absolute -right-4 -bottom-4 select-none group-hover:scale-110 transition-transform">{num}</div>
                 <h3 className="text-2xl font-bold mb-3">{t[`step${num}_title`]}</h3>
