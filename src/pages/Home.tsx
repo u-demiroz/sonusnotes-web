@@ -9,8 +9,8 @@ type Lang = 'en' | 'tr' | 'ru' | 'es';
 const content: Record<Lang, Record<string, string>> = {
   en: {
     nav_features: "Features", nav_privacy: "Privacy", nav_cta: "Get Started",
-    hero_title1: "Listen to Your Inner Voice.", hero_title2: "Discover Your Emotions.",
-    hero_subtitle: "The smart audio journal that listens to you, understands your voice tone, and provides deep psychological insights. Clear your mind without typing a single word.",
+    hero_title1: "Speak for a minute.", hero_title2: "See what you keep repeating.",
+    hero_subtitle: "SonusNotes listens to your voice entries and shows you the patterns, emotions, and topics you return to — privately, on your device.",
     how_title: "How it works?", how_subtitle: "Three simple steps to mental clarity.",
     step1_title: "Tap & Speak", step1_desc: "Just press record. No typing, no pressure. Let your thoughts out naturally.",
     step2_title: "AI Analyzes", step2_desc: "Our AI transcribes your words and detects the subtle emotions in your tone.",
@@ -22,8 +22,8 @@ const content: Record<Lang, Record<string, string>> = {
     f4_title: "Multi-Language Support", f4_desc: "Speak in English, Spanish or Turkish. Sonus Notes understands you perfectly.",
     f5_title: "Absolute Privacy", f5_desc: "Your thoughts are yours. End-to-end encrypted and completely private.",
     f6_title: "Personalized Insights", f6_desc: "Get warm, empathetic and actionable psychological insights after every entry.",
-    cta_title: "Ready to meet your inner voice?", cta_subtitle: "Join thousands of users discovering themselves through the power of AI-assisted audio journaling.",
-    cta_btn: "Download Sonus Notes",
+    cta_title: "Your thoughts deserve more than a notes app.", cta_subtitle: "Start your private audio journal today.",
+    cta_btn: "Download SonusNotes",
     contact_title: "Contact Us", contact_subtitle: "Have a question or need support? Send us a message.",
     contact_name: "Full Name", contact_name_ph: "John Doe",
     contact_email: "Email Address", contact_email_ph: "john@example.com",
@@ -33,8 +33,8 @@ const content: Record<Lang, Record<string, string>> = {
   },
   tr: {
     nav_features: "Özellikler", nav_privacy: "Gizlilik", nav_cta: "Başla",
-    hero_title1: "İç Sesini Dinle.", hero_title2: "Duygularını Keşfet.",
-    hero_subtitle: "Seni dinleyen, ses tonunu anlayan ve derin psikolojik içgörüler sağlayan akıllı sesli günlük. Tek kelime yazmadan zihnini temizle.",
+    hero_title1: "Bir dakika konuş.", hero_title2: "Tekrarladığın şeyleri gör.",
+    hero_subtitle: "SonusNotes sesli girişlerini dinler ve tekrar döndüğün kalıpları, duyguları ve konuları gösterir — özel olarak, cihazında.",
     how_title: "Nasıl çalışır?", how_subtitle: "Zihinsel netlik için üç basit adım.",
     step1_title: "Dokun ve Konuş", step1_desc: "Sadece kaydet'e bas. Yazma yok, baskı yok. Düşüncelerini doğal olarak dışarı çıkar.",
     step2_title: "Yapay Zeka Analiz Eder", step2_desc: "Yapay zekamız kelimelerini yazıya döker ve tonundaki ince duyguları tespit eder.",
@@ -46,8 +46,8 @@ const content: Record<Lang, Record<string, string>> = {
     f4_title: "Çoklu Dil Desteği", f4_desc: "İngilizce, İspanyolca veya Türkçe konuş. Sonus Notes seni mükemmel anlar.",
     f5_title: "Mutlak Gizlilik", f5_desc: "Düşüncelerin sana ait. Uçtan uca şifrelenmiş ve tamamen özel.",
     f6_title: "Kişiselleştirilmiş İçgörüler", f6_desc: "Her girişten sonra sıcak, empatik ve uygulanabilir psikolojik içgörüler al.",
-    cta_title: "İç sesinle tanışmaya hazır mısın?", cta_subtitle: "AI destekli sesli günlükleme gücüyle kendilerini keşfeden binlerce kullanıcıya katıl.",
-    cta_btn: "Sonus Notes'u İndir",
+    cta_title: "Düşüncelerin bir not uygulamasından fazlasını hak ediyor.", cta_subtitle: "Bugün özel sesli günlüğüne başla.",
+    cta_btn: "SonusNotes'u İndir",
     contact_title: "Bize Ulaşın", contact_subtitle: "Bir sorunuz mu var veya desteğe mi ihtiyacınız var? Bize bir mesaj gönderin.",
     contact_name: "Ad Soyad", contact_name_ph: "Ali Yılmaz",
     contact_email: "E-posta Adresi", contact_email_ph: "ali@ornek.com",
@@ -57,8 +57,8 @@ const content: Record<Lang, Record<string, string>> = {
   },
   ru: {
     nav_features: "Функции", nav_privacy: "Конфиденциальность", nav_cta: "Начать",
-    hero_title1: "Слушай свой внутренний голос.", hero_title2: "Открой свои эмоции.",
-    hero_subtitle: "Умный аудио-дневник, который слушает вас, понимает тон вашего голоса и предоставляет глубокие психологические инсайты. Очистите разум, не напечатав ни слова.",
+    hero_title1: "Говорите минуту.", hero_title2: "Увидьте, что вы повторяете.",
+    hero_subtitle: "SonusNotes слушает ваши голосовые записи и показывает паттерны, эмоции и темы, к которым вы возвращаетесь — приватно, на вашем устройстве.",
     how_title: "Как это работает?", how_subtitle: "Три простых шага к ментальной ясности.",
     step1_title: "Нажми и Говори", step1_desc: "Просто нажми запись. Без печати, без давления. Выпусти свои мысли естественно.",
     step2_title: "ИИ Анализирует", step2_desc: "Наш ИИ транскрибирует ваши слова и обнаруживает тонкие эмоции в вашем тоне.",
@@ -70,8 +70,8 @@ const content: Record<Lang, Record<string, string>> = {
     f4_title: "Поддержка Многоязычности", f4_desc: "Говорите на английском, испанском или турецком. Sonus Notes отлично вас понимает.",
     f5_title: "Абсолютная Конфиденциальность", f5_desc: "Ваши мысли принадлежат вам. Сквозное шифрование и полная приватность.",
     f6_title: "Персонализированные Инсайты", f6_desc: "Получайте тёплые, эмпатичные и практичные психологические инсайты после каждой записи.",
-    cta_title: "Готовы встретиться со своим внутренним голосом?", cta_subtitle: "Присоединяйтесь к тысячам пользователей, открывающих себя с помощью аудио-дневников на основе ИИ.",
-    cta_btn: "Скачать Sonus Notes",
+    cta_title: "Ваши мысли заслуживают большего, чем приложение для заметок.", cta_subtitle: "Начните свой приватный аудио-журнал сегодня.",
+    cta_btn: "Скачать SonusNotes",
     contact_title: "Свяжитесь с нами", contact_subtitle: "Есть вопрос или нужна поддержка? Отправьте нам сообщение.",
     contact_name: "Полное имя", contact_name_ph: "Иван Иванов",
     contact_email: "Адрес электронной почты", contact_email_ph: "ivan@primer.com",
@@ -81,8 +81,8 @@ const content: Record<Lang, Record<string, string>> = {
   },
   es: {
     nav_features: "Características", nav_privacy: "Privacidad", nav_cta: "Comenzar",
-    hero_title1: "Escucha tu voz interior.", hero_title2: "Descubre tus emociones.",
-    hero_subtitle: "El diario de audio inteligente que te escucha, entiende el tono de tu voz y proporciona insights psicológicos profundos. Libera tu mente sin escribir ni una palabra.",
+    hero_title1: "Habla durante un minuto.", hero_title2: "Ve lo que sigues repitiendo.",
+    hero_subtitle: "SonusNotes escucha tus entradas de voz y te muestra los patrones, emociones y temas a los que regresas — de forma privada, en tu dispositivo.",
     how_title: "¿Cómo funciona?", how_subtitle: "Tres simples pasos hacia la claridad mental.",
     step1_title: "Toca y Habla", step1_desc: "Solo presiona grabar. Sin escribir, sin presión. Deja que tus pensamientos fluyan naturalmente.",
     step2_title: "La IA Analiza", step2_desc: "Nuestra IA transcribe tus palabras y detecta las emociones sutiles en tu tono.",
@@ -94,8 +94,8 @@ const content: Record<Lang, Record<string, string>> = {
     f4_title: "Soporte Multilingüe", f4_desc: "Habla en inglés, español o turco. Sonus Notes te entiende perfectamente.",
     f5_title: "Privacidad Absoluta", f5_desc: "Tus pensamientos son tuyos. Cifrado de extremo a extremo y completamente privado.",
     f6_title: "Insights Personalizados", f6_desc: "Obtén insights psicológicos cálidos, empáticos y accionables después de cada entrada.",
-    cta_title: "¿Listo para conocer tu voz interior?", cta_subtitle: "Únete a miles de usuarios que se descubren a sí mismos a través del poder del journaling de audio asistido por IA.",
-    cta_btn: "Descargar Sonus Notes",
+    cta_title: "Tus pensamientos merecen más que una app de notas.", cta_subtitle: "Comienza hoy tu diario de audio privado.",
+    cta_btn: "Descargar SonusNotes",
     contact_title: "Contáctanos", contact_subtitle: "¿Tienes una pregunta o necesitas soporte? Envíanos un mensaje.",
     contact_name: "Nombre Completo", contact_name_ph: "Juan García",
     contact_email: "Correo Electrónico", contact_email_ph: "juan@ejemplo.com",
@@ -375,7 +375,7 @@ function App() {
           <p>© 2026 Sonus Notes. {t.footer_rights}</p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-white transition-colors">{t.nav_privacy}</Link>
-            <a href="#" className="hover:text-white transition-colors">{t.footer_terms}</a>
+            <Link to="/terms" className="hover:text-white transition-colors">{t.footer_terms}</Link>
             <a href="#contact" className="hover:text-white transition-colors">{t.footer_contact}</a>
           </div>
         </div>
