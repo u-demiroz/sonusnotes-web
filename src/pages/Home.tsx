@@ -223,6 +223,14 @@ function App() {
             </svg>
             Play Store
           </a>
+          <a href="https://www.rustore.ru/catalog/app/com.ugurdemiroz.sonusnotes" target="_blank" rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 bg-white text-background-dark px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform hover:shadow-[0_0_30px_-5px_rgba(255,255,255,0.4)]">
+            <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+              <rect width="24" height="24" rx="6" fill="#3B6FF0"/>
+              <text x="12" y="16" textAnchor="middle" fontSize="10" fontWeight="bold" fill="white" fontFamily="sans-serif">RU</text>
+            </svg>
+            RuStore
+          </a>
         </motion.div>
 
         {/* Mockup Preview */}
